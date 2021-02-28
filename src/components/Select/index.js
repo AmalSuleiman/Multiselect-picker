@@ -4,13 +4,6 @@ import Select from "react-select";
 const SelectPicker = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
-  // const disableSelection = (state) => {
-  //   if(state.isSelected)
-  //     return true;
-  //   else
-  //     return false;
-  // }
-
   const options = [
     { value: 1, label: 'Budget', disabled:true, },
     { value: 2, label: 'Food allergies' },
