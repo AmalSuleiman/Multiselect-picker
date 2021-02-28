@@ -4,18 +4,18 @@ import Select from "react-select";
 const SelectPicker = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
-  const disableSelection = (state) => {
-    if(state.isSelected)
-      return false;
-    else
-      return true;
-  }
+  // const disableSelection = (state) => {
+  //   if(state.isSelected)
+  //     return true;
+  //   else
+  //     return false;
+  // }
 
   const options = [
-    { value: 1, label: 'Budget', disabled:disableSelection, },
-    { value: 2, label: 'Food allergies', disabled:disableSelection },
-    { value: 3, label: 'Number of people', disabled:disableSelection },
-    { value: 4, label: 'Special restrictions', disabled:disableSelection },
+    { value: 1, label: 'Budget', disabled:true, },
+    { value: 2, label: 'Food allergies' },
+    { value: 3, label: 'Number of people' },
+    { value: 4, label: 'Special restrictions' },
   ];
 
   const customStyles = {
@@ -42,7 +42,6 @@ const SelectPicker = () => {
   return (
     <div class="App">
       <Select
-        className="control"
         styles = {customStyles}
         isMulti
         isSearchable
