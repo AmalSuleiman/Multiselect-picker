@@ -49,7 +49,7 @@ const SelectPicker = () => {
         defaultValue={selectedOption}
         onChange={handleChange}
         options={options}
-        isOptionDisabled={(option) => option.isdisabled}
+        isOptionDisabled={(option) => option.disabled}
       />
     </div>
   );
